@@ -3,6 +3,27 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
 :root {
 
+  .container {
+        /*1140px */
+        max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+  }
+
+  .grid {
+    display: grid;
+    gap:9.6rem;
+}
+
+
+.grid--2-cols {
+    grid-template-columns: repeat(2,1fr);
+
+}
+.grid--3-cols {
+    grid-template-columns: repeat(3,1fr);
+
+}
   --heading-font-family:"Rubik"
 
   &, &.light-mode {

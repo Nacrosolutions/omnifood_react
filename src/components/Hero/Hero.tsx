@@ -3,10 +3,12 @@ import Heading from "../../helper/Heading";
 import './Hero.css';
 import LinkComponent from "../../helper/LinkComponent";
 import Meals from "./Meals";
+import Header from "../Header/Header";
+import SectionHow from "../SectionHow";
 
 const SectionHero=styled.section`
        background-color: #fdf2e9;
-       padding: 9.6rem 0;
+    padding:4.8rem 0 9.6rem 0;
 `;
 
 
@@ -27,6 +29,9 @@ const HeroImgDiv=styled.div`
 
 const Hero=()=>{
     return (
+        <>
+        <Header></Header>
+        <main>
         <SectionHero>
             <HeroDiv>
                 <div className="hero-text-box">
@@ -48,6 +53,9 @@ The smart 365-days-per-year food subscription that will make you eat healthy aga
 
 
         </SectionHero>
+        <SectionHow/>
+        </main>
+        </>
     )
 }
 
