@@ -5,6 +5,7 @@ import LinkComponent from "../../helper/LinkComponent";
 import Meals from "./Meals";
 import Header from "../Header/Header";
 import SectionHow from "../SectionHow";
+import Featured from "../Featured";
 
 const SectionHero=styled.section`
        background-color: #fdf2e9;
@@ -53,6 +54,7 @@ The smart 365-days-per-year food subscription that will make you eat healthy aga
 
 
         </SectionHero>
+        <Featured/>
         <SectionHow/>
         </main>
         </>
